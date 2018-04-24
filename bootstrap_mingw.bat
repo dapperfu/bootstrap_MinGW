@@ -2,7 +2,7 @@
 : If download URL is not defined (set through Jenkins, etc)
 IF "%MINGW_URL%"=="" (
 : Use a known default
-set URL=https://nuwen.net/files/mingw/mingw-15.3.exe
+set URL=https://nuwen.net/files/mingw/mingw-15.4.exe
 ) ELSE (
 : Otherwise use the given URL.
 set URL=%MINGW_URL%
