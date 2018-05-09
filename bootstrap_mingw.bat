@@ -15,6 +15,3 @@ cd %~dp0
 if not exist %PKG% %~dp0curl.exe -L -o %~dp0%PKG% %URL%
 : If the package has not been 'installed' install it.
 if not exist %~dp0MinGW 7z x %PKG% -y -o%~dp0
-
-: Load the MinGW environment so other scripts can call MinGW tools.
-call %~dp0MinGW\set_distro_paths.bat
